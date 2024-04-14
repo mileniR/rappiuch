@@ -12,6 +12,7 @@ $("#login").on("click", function(){
     const valuePassword = $password.val();
     if (valueUsuario == credenciales.usuario) {
         if (valuePassword == credenciales.pass) {
+            //localstorage
             location.href = "dashboard.html";
             localStorage.setItem("userLogueado", true);
         } else {

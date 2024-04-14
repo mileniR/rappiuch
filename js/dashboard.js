@@ -134,7 +134,7 @@ if (idcompra) {
         });
     }
 }
-
+//verificar si se esta logueado
 function verificarAutenticacion() {
     if (!localStorage.getItem("userLogueado")) {
         location.href = "index.html";
@@ -142,6 +142,7 @@ function verificarAutenticacion() {
 }
 verificarAutenticacion();
 
+//para salir 
 document.getElementById("salir").addEventListener('click', function () {
     localStorage.removeItem("userLogueado");
     location.href = "index.html";
